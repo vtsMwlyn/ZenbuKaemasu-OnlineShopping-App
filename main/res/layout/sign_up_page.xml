@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainbg"
+    android:padding="20dp"
+    tools:context=".SignUpPage">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zenbu"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaemasu"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O n l i n e   S h o p"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/contentbg"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please fill in all of these data to make a new account"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/inp_username"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Username"
+            android:background="@drawable/rounded_component"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/inp_password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Password"
+            android:background="@drawable/rounded_component"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/inp_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Full name"
+            android:background="@drawable/rounded_component"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/inp_bdate"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:hint="Birth date"
+                android:background="@drawable/rounded_component"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/inp_phone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Phone"
+                android:inputType="number"
+                android:background="@drawable/rounded_component"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/inp_email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_component"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/inp_address"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Address"
+            android:background="@drawable/rounded_component"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <CheckBox
+            android:id="@+id/inp_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have read and agreed to the term of agreement and privacy policy"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

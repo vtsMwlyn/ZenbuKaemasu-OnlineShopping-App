@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainbg"
+    android:padding="20dp"
+    tools:context=".SignInPage">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zenbu"
+            android:textSize="60sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaemasu"
+            android:textSize="45sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="-20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O n l i n e   S h o p"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/contentbg"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please sign in to continue"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/inp_username"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Enter username"
+            android:background="@drawable/rounded_component"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/inp_password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_component"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/new_account_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create new account"
+            android:textColor="@color/link"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
